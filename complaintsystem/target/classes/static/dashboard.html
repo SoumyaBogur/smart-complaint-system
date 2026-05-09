@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Complaint Portal 🏫</h2>
+
+    <form onsubmit="return submitComplaint()">
+        <select id="category" required>
+            <option value="" disabled selected>Select Category</option>
+            <option>Hostel</option>
+            <option>Faculty</option>
+            <option>Facilities</option>
+            <option>Transport</option>
+        </select>
+
+        <textarea id="complaint" placeholder="Describe your issue..." rows="4" required></textarea>
+
+        <button type="submit">Submit Complaint</button>
+    </form>
+    <br>
+
+    <button onclick="window.location.href='view.html'">
+        View Complaints
+    </button>
+    <button onclick="logoutUser()">Logout</button>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
